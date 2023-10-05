@@ -22,7 +22,7 @@ fruit_choice = streamlit.text_input('What fruit would you like information about
 streamlit.write('The user entered ', fruit_choice)
 
 # Display the table on the page.
-fruits_to_show = my_fruit_list.loc[fruits_choice]
+fruits_to_show = my_fruit_list.loc[fruit_choice]
 streamlit.dataframe(fruits_to_show)
 
 import requests
