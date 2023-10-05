@@ -22,7 +22,7 @@ fruits_to_show = my_fruit_list.loc[fruits_selected]
 # Display the table on the page.
 streamlit.dataframe(fruits_to_show)
 
-st.button("+", key=none, help=None, on_click=add_fruit())
+streamlit.button("+", key=none, help=None, on_click=add_fruit())
 
     
 fruit_choice = streamlit.text_input('What fruit would you like information about?','Kiwi')
