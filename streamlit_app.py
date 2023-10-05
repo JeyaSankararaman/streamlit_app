@@ -25,7 +25,7 @@ def add_fruit():
     fruit_added = streamlit.text_input('What fruit would you like to add?')
     streamlit.write('Thankyou for adding', fruit_added)
     
-streamlit.button("+", key=None, help=None, on_click=add_fruit())
+streamlit.button("+", key=None, help=None, on_click=add_fruit)
 
     
 fruit_choice = streamlit.text_input('What fruit would you like information about?','Kiwi')
